@@ -7,6 +7,7 @@ const morgan = require("morgan");
 const dotenv = require("dotenv");
 
 const route = require("./routes");
+const { redisClient } = require("./utils/redis/config");
 const app = express()
 
 app.use(cors());
